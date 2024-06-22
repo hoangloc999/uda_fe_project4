@@ -1,0 +1,13 @@
+$primary-color: #3498db;
+$logo-size: 34px;
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 40px;
+
+    .logo {
+        font-size: $logo-size;
+        color: $primary-color;
+    }
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Test</title>
+        <link href="https://fonts.googleapis.com/css2?&family=Roboto:wght@300;500;700&family=Roboto+Slab:wght@300;400;700;800&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/4324d64788.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+
+        <header>
+            <div class="logo">
+                Sentiment Analysis Page
+            </div>
+        </header>
+
+        <main>
+            <section>
+                <form id="urlForm">
+                    <input id="url" type="text" name="url" placeholder="Enter URL" required>
+                    <button id="submitButton" class="btn" type="submit">Submit</button>
+                </form>
+                
+            </section>
+
+            <section>
+                <strong>Form Results:</strong>
+                <div id="results">
+                    <div id="polarity"></div>
+                    <div id="agreement"></div>
+                    <div id="subjectivity"></div>
+                    <div id="confidence"></div>
+                    <div id="irony"></div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy;Udacity-Evaluate a News Article with Natural Language Processing</p>
+        </footer>
+        <script>
+            // Check that service workers are supported
+            if ('serviceWorker' in navigator) {
+                // Use the window load event to keep the page load performant
+                window.addEventListener('load', () => {
+                    navigator.serviceWorker.register('/service-worker.js');
+                });
+            }
+        </script>
+    </body>
+</html>
