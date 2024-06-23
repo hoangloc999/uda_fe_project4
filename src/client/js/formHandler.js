@@ -4,7 +4,7 @@ const {checkForURL} = require('./urlChecker')
 
 // If working on Udacity workspace, update this with the Server API URL e.g. `https://wfkdhyvtzx.prod.udacity-student-workspaces.com/api`
 // const serverURL = 'https://wfkdhyvtzx.prod.udacity-student-workspaces.com/api'
-const serverURL = 'http://localhost:8000/api'
+const serverURL = '/api'
 
 // Make sure get form after DOM load completely
 document.addEventListener('DOMContentLoaded', function () {

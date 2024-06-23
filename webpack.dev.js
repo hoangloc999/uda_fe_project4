@@ -30,6 +30,7 @@ module.exports = {
         new HtmlWebPackPlugin({
             template: "./src/client/views/index.html",
             filename: "./index.html",
+            favicon: "./src/client/favicon.ico"
         }),
         new CleanWebpackPlugin({
             // Simulate the removal of files
